@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Hit
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -13,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - Bullet
   - 
   - 
   - 
@@ -39,7 +38,7 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
+  - name: UI
     uniqueID: 1729510891
     locked: 0
   - name: Default

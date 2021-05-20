@@ -5,7 +5,6 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public float fireRate = 0;
-    public float Damage = 10;
 
     float timeToFire = 0;
     public Transform firePoint;
