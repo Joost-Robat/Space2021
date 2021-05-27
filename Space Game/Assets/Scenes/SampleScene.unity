@@ -419,6 +419,7 @@ GameObject:
   - component: {fileID: 631819234}
   - component: {fileID: 631819233}
   - component: {fileID: 631819232}
+  - component: {fileID: 631819237}
   m_Layer: 0
   m_Name: Enemy (2)
   m_TagString: Untagged
@@ -547,12 +548,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631819231}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -66.4, y: 4.6, z: 0}
+  m_LocalPosition: {x: -71.8, y: 5.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &631819237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631819231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2250b6e12ca9a4e8d5cc4e9b36d486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnPlatform: 0
 --- !u!1 &732815558
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +613,7 @@ GameObject:
   - component: {fileID: 1235555055}
   - component: {fileID: 1235555054}
   - component: {fileID: 1235555053}
+  - component: {fileID: 1235555058}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Untagged
@@ -733,6 +748,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1235555058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235555052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2250b6e12ca9a4e8d5cc4e9b36d486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnPlatform: 0
 --- !u!1 &1505749552
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +774,7 @@ GameObject:
   - component: {fileID: 1505749553}
   - component: {fileID: 1505749557}
   - component: {fileID: 1505749556}
+  - component: {fileID: 1505749559}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -880,6 +909,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1505749559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505749552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2250b6e12ca9a4e8d5cc4e9b36d486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnPlatform: 0
 --- !u!1 &1671705137
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +933,7 @@ GameObject:
   - component: {fileID: 1671705138}
   - component: {fileID: 1671705140}
   - component: {fileID: 1671705139}
+  - component: {fileID: 1671705141}
   m_Layer: 0
   m_Name: Float
   m_TagString: Untagged
@@ -989,6 +1032,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1671705141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671705137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a604013cf9a1f4bb3d5b3434629f2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1729420020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,6 +1056,7 @@ GameObject:
   - component: {fileID: 1729420023}
   - component: {fileID: 1729420024}
   - component: {fileID: 1729420022}
+  - component: {fileID: 1729420025}
   m_Layer: 8
   m_Name: FloatGT
   m_TagString: Untagged
@@ -1123,6 +1179,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.24, y: 2.1}
   m_EdgeRadius: 0
+--- !u!114 &1729420025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729420020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a604013cf9a1f4bb3d5b3434629f2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1925769115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,6 +1308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementSpeed: 30
   JumpForce: 80
+  rotation: 0
 --- !u!50 &1998989274
 Rigidbody2D:
   serializedVersion: 4

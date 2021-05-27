@@ -6,7 +6,7 @@ public class Weapon : MonoBehaviour
 {
     public float fireRate = 0;
     public float Damage = 10;
-    public LayerMask notToHit;
+    public LayerMask notToHit; 
 
     float timeToFire = 0;
     public Transform firePoint;
