@@ -6,18 +6,19 @@ public class EnemyBehaviour : MonoBehaviour
 {
     float playerX;
     float playerY;
+    float EnemyY;
+    bool inRange = false;
     GameObject player;
-    private bool facingRight = true;
     public bool isOnPlatform = false;
     private float PlayerYTest;
-    private float rangePlayerX;
     private float xMinus;
     private float xPlus;
     public float jumpTrue;
+    private Rigidbody2D rigidBody;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rigidBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -27,60 +28,44 @@ public class EnemyBehaviour : MonoBehaviour
         playerY = player.transform.position.y;
         playerX = player.transform.position.x;
         PlayerYTest = player.transform.position.y - 1;
-        xMinus = playerX - 30;
-        xPlus = playerX + 30;
-        if(transform.position.x >= playerX)
-            // Plus if statement
-        {
-            if(xPlus <= transform.position.x)
-            {
-                if(transform.position.y <= PlayerYTest)
-                {
-                    jumpTrue += 10 * Time.deltaTime;
-                    Debug.Log(jumpTrue);
-                }
-                else
-                {
-                    jumpTrue = 0;
-                    Debug.Log(jumpTrue);
-                }
-            }
-        }
-        if(transform.position.x <= playerX)
-            // Minus if statement
+        EnemyY = transform.position.y;
+        xMinus = playerX - 40;
+        xPlus = playerX + 40;
+        if(xPlus <= transform.position.x)
         {
             if(xMinus <= transform.position.x)
             {
-                if(transform.position.y <= PlayerYTest)
-                {
-                    jumpTrue += 10 * Time.deltaTime;
-                    Debug.Log(jumpTrue);
-                }
-                else
-                {
-                    jumpTrue = 0;
-                    Debug.Log(jumpTrue);
-                }
+                inRange = true; 
+            }
+            else
+            {
+                inRange = false;
             }
         }
-        if(gameObject.transform.position.y <= playerY)
+        if(inRange == true)
         {
-            if (gameObject.transform.position.x <= playerX || gameObject)
+            if (EnemyY < PlayerYTest)
             {
-
+                jumpTrue += 10 * Time.deltaTime;
+                if (jumpTrue >= 50)
+                {
+                    rigidBody.AddForce(new Vector2(0, 80), ForceMode2D.Impulse);
+                    jumpTrue -= 25;
+                }
             }
         }
         if (gameObject.transform.position.x <= playerX)
         {
-            transform.position += new Vector3(2f, 0f, 0f) * Time.deltaTime;
+            transform.position += new Vector3(10f, 0f, 0f) * Time.deltaTime;
             SpriteRenderer sp = GetComponent<SpriteRenderer>();
             flip(false);
         }
         if(gameObject.transform.position.x >= playerX)
         {
-            transform.position -= new Vector3(2f, 0f, 0f) * Time.deltaTime;
+            transform.position -= new Vector3(10f, 0f, 0f) * Time.deltaTime;
             flip(true);
         }
+        Debug.Log(jumpTrue);
     }
     void flip(bool Statement)
     {
