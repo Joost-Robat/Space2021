@@ -7,13 +7,14 @@ public class EnemyBehaviour : MonoBehaviour
     float playerX;
     float playerY;
     GameObject player;
-    private bool facingRight = true;
     public bool isOnPlatform = false;
     private float PlayerYTest;
     private float rangePlayerX;
     private float xMinus;
     private float xPlus;
+    private float JumpForce = 1;
     public float jumpTrue;
+    private Rigidbody2D _rigidbody;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,40 +35,42 @@ public class EnemyBehaviour : MonoBehaviour
         {
             if(xPlus <= transform.position.x)
             {
-                if(transform.position.y <= PlayerYTest)
+                if (transform.position.y <= PlayerYTest)
                 {
+                    transform.position += new Vector3(0, 1000, 0) * Time.deltaTime;
                     jumpTrue += 10 * Time.deltaTime;
                     Debug.Log(jumpTrue);
-                }
-                else
-                {
-                    jumpTrue = 0;
-                    Debug.Log(jumpTrue);
+                    if (jumpTrue >= 50)
+                    {
+                        transform.position += new Vector3(0, 50, 0) * Time.deltaTime;
+                        jumpTrue -= 50;
+                    }
+                    else
+                    {
+                        jumpTrue = 0;
+                    }
                 }
             }
         }
         if(transform.position.x <= playerX)
             // Minus if statement
         {
-            if(xMinus <= transform.position.x)
+            if (xMinus <= transform.position.x)
             {
-                if(transform.position.y <= PlayerYTest)
+                if (transform.position.y <= PlayerYTest)
                 {
                     jumpTrue += 10 * Time.deltaTime;
                     Debug.Log(jumpTrue);
+                    if (jumpTrue >= 50)
+                    {
+                        transform.position += new Vector3(0, 1000, 0) * Time.deltaTime;
+                        jumpTrue -= 10;
+                    }
+                    else
+                    {
+                        jumpTrue = 0;
+                    }
                 }
-                else
-                {
-                    jumpTrue = 0;
-                    Debug.Log(jumpTrue);
-                }
-            }
-        }
-        if(gameObject.transform.position.y <= playerY)
-        {
-            if (gameObject.transform.position.x <= playerX || gameObject)
-            {
-
             }
         }
         if (gameObject.transform.position.x <= playerX)
