@@ -2,8 +2,10 @@
 
 public class PlayerControls : MonoBehaviour
 {
+    public float Health = 100;
     public float MovementSpeed = 1;
     public float JumpForce = 1;
+    public GameObject deathEffect;
 
     private Rigidbody2D _rigidbody;
 
@@ -31,5 +33,18 @@ public class PlayerControls : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
         }
+    }
+    public void TakeDamage(int damage)
+    {
+        Health -= damage;
+        if (Health <= 0)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }
