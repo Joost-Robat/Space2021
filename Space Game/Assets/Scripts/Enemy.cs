@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float health = 5;
+    public float health = 50;
 
     public GameObject deathEffect;
     

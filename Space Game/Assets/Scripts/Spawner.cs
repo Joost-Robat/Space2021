@@ -21,6 +21,8 @@ public class Spawner : MonoBehaviour
     {
         Enemy enemy = GetComponent<Enemy>();
         multiplierRandom = Random.Range(multiplierMinimum, multiplierMaximum);
+        enemy.health = 5;
+        enemy.health = enemy.health * multiplierRandom;
         timer += Time.deltaTime;
         Debug.Log("timer:" + timer);
         if(timer >= 10)

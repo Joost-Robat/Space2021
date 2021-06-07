@@ -19,9 +19,6 @@ public class EnemyBehaviour : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        Enemy enemy = GetComponent<Enemy>();
-        Spawner multiplier = GetComponent<Spawner>();
-        enemy.health = enemy.health * multiplier.multiplierRandom;
     }
 
     // Update is called once per frame
