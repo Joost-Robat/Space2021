@@ -5,6 +5,7 @@ public class Character2DController : MonoBehaviour
     public float MovementSpeed = 1;
     public float JumpForce = 1;
     public float rotation;
+    public float health = 100;
 
     private Rigidbody2D _rigidbody;
     private bool facingRight = true;
@@ -32,9 +33,9 @@ public class Character2DController : MonoBehaviour
         {
             _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);    
         }
-        //if (Input.GetKey(KeyCode.LeftControl))
+        if(health <= 0)
         {
-
+            Destroy(gameObject);
         }
     }
     private void FlipCharacter()
