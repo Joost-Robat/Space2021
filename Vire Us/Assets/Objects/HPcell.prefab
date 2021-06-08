@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6552395364776106248}
   - component: {fileID: 6552395364776106251}
-  - component: {fileID: 6552395364776106250}
   - component: {fileID: 6552395364776106249}
   m_Layer: 0
   m_Name: HPcell
@@ -84,19 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6552395364776106250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6552395364776106245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf4cf7a6cacedd448bf2340ac56df2e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthIncrease: 25
 --- !u!61 &6552395364776106249
 BoxCollider2D:
   m_ObjectHideFlags: 0

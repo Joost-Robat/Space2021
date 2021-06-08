@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MedKit : MonoBehaviour
+public class HPcell : MonoBehaviour
 {
     PlayerControls playerHealth;
     public float healthIncrease = 25f;
