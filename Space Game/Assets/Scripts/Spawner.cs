@@ -7,8 +7,8 @@ public class Spawner : MonoBehaviour
 {
     // Start is called before the first frame update
     public float timer;
-    public float multiplierMinimum = 50;
-    public float multiplierMaximum = 51;
+    public int multiplierMinimum = 0;
+    public int multiplierMaximum = 50;
     public GameObject Enemy;
     void Start()
     {
@@ -19,16 +19,13 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        multiplierMaximum += Time.deltaTime;
+        
         Debug.Log("timer:" + timer);
-        if(timer >= 10)
+        if (timer >= 5)
         {
             Instantiate(Enemy, transform.position, transform.rotation);
             timer -= 10;
-            if(multiplierMaximum <= 1000)
-            {
-                multiplierMaximum += 1;
-            }
+            multiplierMaximum += 1;
         }
     }
 }

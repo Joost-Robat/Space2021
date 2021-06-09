@@ -289,15 +289,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428874004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfa504d59dd1e8f48b87967c65ad4d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  multiplierMinimum: 10
-  multiplierMaximum: 10
-  multiplierRandom: 0
+  multiplierMinimum: 50
+  multiplierMaximum: 51
   Enemy: {fileID: 6260155521743830343, guid: b281efa15e3a4a140a908417449a1419, type: 3}
 --- !u!65 &428874006
 BoxCollider:
@@ -554,7 +553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e12822b61f5847468e6732ff9873c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 5
   deathEffect: {fileID: 5754266253853399721, guid: 76600f0c53cad3f4eaacf53576629604,
     type: 3}
 --- !u!50 &631819233
@@ -682,6 +681,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpTrue: 0
+  speedRight: 0
+  speedLeft: 0
   countdown: 0
 --- !u!251 &631819238
 PlatformEffector2D:
@@ -782,7 +783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e12822b61f5847468e6732ff9873c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 5
   deathEffect: {fileID: 5754266253853399721, guid: 76600f0c53cad3f4eaacf53576629604,
     type: 3}
 --- !u!50 &1235555054
@@ -910,6 +911,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpTrue: 0
+  speedRight: 0
+  speedLeft: 0
   countdown: 0
 --- !u!251 &1235555059
 PlatformEffector2D:
@@ -1263,15 +1266,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806152584}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfa504d59dd1e8f48b87967c65ad4d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  multiplierMinimum: 10
-  multiplierMaximum: 10
-  multiplierRandom: 0
+  multiplierMinimum: 50
+  multiplierMaximum: 51
   Enemy: {fileID: 6260155521743830343, guid: b281efa15e3a4a140a908417449a1419, type: 3}
 --- !u!65 &1806152586
 BoxCollider:

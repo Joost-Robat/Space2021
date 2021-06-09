@@ -14,6 +14,8 @@ public class EnemyBehaviour : MonoBehaviour
     private float xPlus;
     public float jumpTrue;
     private Rigidbody2D rigidBody;
+    public float speedRight = 0;
+    public float speedLeft = 0;
     public float countdown = 0;
     // Start is called before the first frame update
     void Start()
@@ -58,17 +60,48 @@ public class EnemyBehaviour : MonoBehaviour
                 jumpTrue = 0;
             }
         }
-        if (gameObject.transform.position.x <= playerX)
+                                                    // Begin movement right
+        if (gameObject.transform.position.x <= playerX) 
         {
-            transform.position += new Vector3(10f, 0f, 0f) * Time.deltaTime;
-            SpriteRenderer sp = GetComponent<SpriteRenderer>();
+            speedRight += 10f * Time.deltaTime;
             flip(false);
-        }
+            if (speedRight > 35)
+            {
+                speedRight = 35;
+            }
+                                            // Start Tegenstribbel Links
+            if (speedLeft < 0)
+            {
+                speedLeft -= 10f * Time.deltaTime;
+            }
+            else if (speedLeft > 0)
+            {
+                speedLeft = 0;
+            }
+        }                                   // End Tegenstribbel Links
+                                                    // End movement right
+                                                    // Begin movement left
         if (gameObject.transform.position.x >= playerX)
         {
-            transform.position -= new Vector3(10f, 0f, 0f) * Time.deltaTime;
+            speedLeft += 15f * Time.deltaTime;
             flip(true);
-        }
+            if(speedLeft > 40)
+            {
+                speedLeft = 40;
+            }                                   // Begin Tegenstribbel Rechts
+            if (speedRight < 0)
+            {
+                speedRight -= 10f * Time.deltaTime;
+            }
+            else if (speedRight > 0)
+            {
+                speedRight = 0;
+            }
+        }                                       // End Tegenstribbel Rechts
+                                                    // End movement left
+                                                    // Movement Actions
+        transform.position += new Vector3(speedRight, 0, 0) * Time.deltaTime;
+        transform.position -= new Vector3(speedLeft, 0, 0) * Time.deltaTime;
         Debug.Log(jumpTrue);
     }
     void flip(bool Statement)
