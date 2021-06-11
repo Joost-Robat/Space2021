@@ -7,6 +7,8 @@ public class PlayerControls : MonoBehaviour
     public float JumpForce = 1;
     public GameObject deathEffect;
 
+    private Vector2 screenBounds;
+
     private Rigidbody2D _rigidbody;
 
     private void Start()

@@ -15,7 +15,6 @@ public class HPcell : MonoBehaviour
     {
         if(playerHealth.Health < 100)
         {
-            Destroy(gameObject);
             playerHealth.Health = playerHealth.Health + healthIncrease;   
         }
     }

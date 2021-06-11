@@ -7,9 +7,8 @@ public class Spawner : MonoBehaviour
 {
     // Start is called before the first frame update
     public float timer;
-    public int multiplierMinimum = 10;
-    public int multiplierMaximum = 10;
-    public int multiplierRandom;
+    public int multiplierMinimum = 0;
+    public int multiplierMaximum = 50;
     public GameObject Enemy;
     void Start()
     {
@@ -19,14 +18,14 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Enemy enemy = GetComponent<Enemy>();
         timer += Time.deltaTime;
+
         Debug.Log("timer:" + timer);
-        if(timer >= 10)
+        if (timer >= 5)
         {
             Instantiate(Enemy, transform.position, transform.rotation);
             timer -= 10;
-           
+            multiplierMaximum += 1;
         }
     }
 }
