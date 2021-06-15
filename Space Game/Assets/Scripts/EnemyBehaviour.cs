@@ -72,7 +72,7 @@ public class EnemyBehaviour : MonoBehaviour
                                             // Start Tegenstribbel Links
             if (speedLeft < 0)
             {
-                speedLeft -= 10f * Time.deltaTime;
+                speedLeft -= 1f * Time.deltaTime;
             }
             else if (speedLeft > 0)
             {
@@ -83,15 +83,15 @@ public class EnemyBehaviour : MonoBehaviour
                                                     // Begin movement left
         if (gameObject.transform.position.x >= playerX)
         {
-            speedLeft += 15f * Time.deltaTime;
+            speedLeft += 10f * Time.deltaTime;
             flip(true);
-            if(speedLeft > 40)
+            if(speedLeft > 35)
             {
-                speedLeft = 40;
+                speedLeft = 33;
             }                                   // Begin Tegenstribbel Rechts
             if (speedRight < 0)
             {
-                speedRight -= 10f * Time.deltaTime;
+                speedRight -= 1f * Time.deltaTime;
             }
             else if (speedRight > 0)
             {
