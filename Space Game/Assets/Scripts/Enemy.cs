@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public void Start()
     {
         Spawner spawner = GetComponent<Spawner>();
-        health = 50 + Random.Range(spawner.multiplierMinimum, spawner.multiplierMaximum);
+        health += Random.Range(spawner.multiplierMinimum, spawner.multiplierMaximum);
     }
     public void TakeDamage(int damage)
     {

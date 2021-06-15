@@ -7,25 +7,26 @@ public class Spawner : MonoBehaviour
 {
     // Start is called before the first frame update
     public float timer;
+    public int randomizedInt;
     public int multiplierMinimum = 0;
     public int multiplierMaximum = 50;
     public GameObject Enemy;
     void Start()
     {
         Enemy enemy = GetComponent<Enemy>();
+        randomizedInt = Random.Range(4, 10);
     }
 
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
-        
-        Debug.Log("timer:" + timer);
-        if (timer >= 5)
+        if (timer >= randomizedInt)
         {
             Instantiate(Enemy, transform.position, transform.rotation);
-            timer -= 10;
+            timer = 0;
             multiplierMaximum += 1;
+            randomizedInt = Random.Range(4, 10);
         }
     }
 }
