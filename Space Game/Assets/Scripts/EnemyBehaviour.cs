@@ -87,7 +87,7 @@ public class EnemyBehaviour : MonoBehaviour
             flip(true);
             if(speedLeft > 35)
             {
-                speedLeft = 33;
+                speedLeft = 35;
             }                                   // Begin Tegenstribbel Rechts
             if (speedRight < 0)
             {

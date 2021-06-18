@@ -289,12 +289,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428874004}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfa504d59dd1e8f48b87967c65ad4d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
+  randomizedInt: 0
   multiplierMinimum: 50
   multiplierMaximum: 51
   Enemy: {fileID: 6260155521743830343, guid: b281efa15e3a4a140a908417449a1419, type: 3}
@@ -1266,12 +1267,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806152584}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfa504d59dd1e8f48b87967c65ad4d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
+  randomizedInt: 0
   multiplierMinimum: 50
   multiplierMaximum: 51
   Enemy: {fileID: 6260155521743830343, guid: b281efa15e3a4a140a908417449a1419, type: 3}

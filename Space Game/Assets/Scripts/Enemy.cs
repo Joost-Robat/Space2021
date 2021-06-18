@@ -10,8 +10,12 @@ public class Enemy : MonoBehaviour
     public GameObject deathEffect;
     public void Start()
     {
-        Spawner spawner = GetComponent<Spawner>();
-        health += Random.Range(spawner.multiplierMinimum, spawner.multiplierMaximum);
+        GameObject[] spawners = GameObject.FindGameObjectsWithTag("Spawner");
+        foreach(GameObject spawner in spawners)
+        {
+            Spawner aSpawner = spawner.GetComponent<Spawner>();
+            health += Random.Range(aSpawner.multiplierMinimum, aSpawner.multiplierMaximum);
+        }
     }
     public void TakeDamage(int damage)
     {
