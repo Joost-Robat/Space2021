@@ -13,7 +13,6 @@ public class Spawner : MonoBehaviour
     public GameObject Enemy;
     void Start()
     {
-        Enemy enemy = GetComponent<Enemy>();
         randomizedInt = Random.Range(4, 10);
     }
 
