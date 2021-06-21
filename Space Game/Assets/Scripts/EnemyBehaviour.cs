@@ -14,8 +14,8 @@ public class EnemyBehaviour : MonoBehaviour
     private float xPlus;
     public float jumpTrue;
     private Rigidbody2D rigidBody;
-    public float speedRight = 0;
-    public float speedLeft = 0;
+    public float speed = 0;
+    public float speedUp = 1;
     public float countdown = 0;
     // Start is called before the first frame update
     void Start()
@@ -60,49 +60,48 @@ public class EnemyBehaviour : MonoBehaviour
                 jumpTrue = 0;
             }
         }
-                                                    // Begin movement right
-        if (gameObject.transform.position.x <= playerX) 
+        if(transform.position.x <= playerX)
         {
-            speedRight += 10f * Time.deltaTime;
             flip(false);
-            if (speedRight > 35)
+            if(speed < 0)
             {
-                speedRight = 35;
+                speedUp = 4;
+                speed += 15 * speedUp * Time.deltaTime;
+                if (speed > 35)
+                {
+                    speed = 35;
+                }
             }
-                                            // Start Tegenstribbel Links
-            if (speedLeft < 0)
+            speedUp = 1;
+            speed += 4 * Time.deltaTime;
+            if(speed > 35)
             {
-                speedLeft -= 1f * Time.deltaTime;
+                speed = 35;
             }
-            else if (speedLeft > 0)
-            {
-                speedLeft = 0;
-            }
-        }                                   // End Tegenstribbel Links
-                                                    // End movement right
-                                                    // Begin movement left
-        if (gameObject.transform.position.x >= playerX)
+        }
+        else
         {
-            speedLeft += 10f * Time.deltaTime;
             flip(true);
-            if(speedLeft > 35)
+            if(speed > 0)
             {
-                speedLeft = 33;
-            }                                   // Begin Tegenstribbel Rechts
-            if (speedRight < 0)
-            {
-                speedRight -= 1f * Time.deltaTime;
+                speedUp = 4;
+                speed -= 15 * speedUp * Time.deltaTime;
+                if (speed < -35)
+                {
+                    speed = -35;
+                }
             }
-            else if (speedRight > 0)
+            speedUp = 1;
+            speed -= 10 * Time.deltaTime;
+            if(speed < -35)
             {
-                speedRight = 0;
+                speed = -35;
             }
-        }                                       // End Tegenstribbel Rechts
-                                                    // End movement left
-                                                    // Movement Actions
-        transform.position += new Vector3(speedRight, 0, 0) * Time.deltaTime;
-        transform.position -= new Vector3(speedLeft, 0, 0) * Time.deltaTime;
-        Debug.Log(jumpTrue);
+        }
+        transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+        //Debug.Log(jumpTrue);
+        //Debug.Log("Right: " + speedRight);
+        //Debug.Log("Left: " + speedLeft);
     }
     void flip(bool Statement)
     {
