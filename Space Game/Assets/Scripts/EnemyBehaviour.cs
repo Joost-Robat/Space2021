@@ -60,10 +60,10 @@ public class EnemyBehaviour : MonoBehaviour
                 jumpTrue = 0;
             }
         }
-        if(transform.position.x <= playerX)
+        if(transform.position.x < playerX)
         {
             flip(false);
-            if(speed < 0)
+            if (speed < 0)
             {
                 speedUp = 4;
                 speed += 15 * speedUp * Time.deltaTime;
@@ -72,11 +72,14 @@ public class EnemyBehaviour : MonoBehaviour
                     speed = 35;
                 }
             }
-            speedUp = 1;
-            speed += 4 * Time.deltaTime;
-            if(speed > 35)
+            else
             {
-                speed = 35;
+                speedUp = 1;
+                speed += 15 * Time.deltaTime;
+                if (speed > 35)
+                {
+                    speed = 35;
+                }
             }
         }
         else
@@ -84,26 +87,21 @@ public class EnemyBehaviour : MonoBehaviour
             flip(true);
             if(speed > 0)
             {
-<<<<<<< HEAD
                 speedUp = 4;
                 speed -= 15 * speedUp * Time.deltaTime;
                 if (speed < -35)
                 {
                     speed = -35;
                 }
-=======
-                speedLeft = 35;
             }                                   // Begin Tegenstribbel Rechts
-            if (speedRight < 0)
+            else
             {
-                speedRight -= 1f * Time.deltaTime;
->>>>>>> 00c6ac687e862c129d3d924da6bc0367e14ea34a
-            }
-            speedUp = 1;
-            speed -= 10 * Time.deltaTime;
-            if(speed < -35)
-            {
-                speed = -35;
+                speedUp = 1;
+                speed -= 15 * Time.deltaTime;
+                if (speed < -35)
+                {
+                    speed = -35;
+                }
             }
         }
         transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
