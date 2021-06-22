@@ -5,13 +5,17 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health = 50;
+    public int health = 5;
 
     public GameObject deathEffect;
     public void Start()
     {
-        Spawner spawner = GetComponent<Spawner>();
-        //health = 50 + Random.Range(spawner.multiplierMinimum, spawner.multiplierMaximum);
+        GameObject[] spawners = GameObject.FindGameObjectsWithTag("Spawner");
+        foreach (GameObject spawner in spawners)
+        {
+            Spawner aSpawner = spawner.GetComponent<Spawner>();
+            health += Random.Range(aSpawner.multiplierMinimum, aSpawner.multiplierMaximum);
+        }
     }
     public void TakeDamage(int damage)
     {

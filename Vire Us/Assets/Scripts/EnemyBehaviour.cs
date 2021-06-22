@@ -65,9 +65,9 @@ public class EnemyBehaviour : MonoBehaviour
         {
             speedRight += 10f * Time.deltaTime;
             flip(false);
-            if (speedRight > 35)
+            if (speedRight > 25)
             {
-                speedRight = 35;
+                speedRight = 25;
             }
             // Start Tegenstribbel Links
             if (speedLeft < 0)
@@ -85,9 +85,9 @@ public class EnemyBehaviour : MonoBehaviour
         {
             speedLeft += 10f * Time.deltaTime;
             flip(true);
-            if (speedLeft > 35)
+            if (speedLeft > 25)
             {
-                speedLeft = 33;
+                speedLeft = 25;
             }                                   // Begin Tegenstribbel Rechts
             if (speedRight < 0)
             {
