@@ -2420,9 +2420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1853472d958d23246b92645f055ee190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 3
+  fireRate: 6
   firePoint: {fileID: 1272271196}
-  bulletPrefab: {fileID: 7541675358426493897, guid: 76600f0c53cad3f4eaacf53576629604,
+  bulletPrefab: {fileID: 7659370004870889872, guid: 5418f7ef78188ed4ba1e826efd4e1e9f,
     type: 3}
 --- !u!1 &1516344002
 GameObject:

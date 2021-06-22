@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public void Start()
     {
         GameObject[] spawners = GameObject.FindGameObjectsWithTag("Spawner");
-        foreach (GameObject spawner in spawners)
+        foreach(GameObject spawner in spawners)
         {
             Spawner aSpawner = spawner.GetComponent<Spawner>();
             health += Random.Range(aSpawner.multiplierMinimum, aSpawner.multiplierMaximum);
