@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1116979557610385602}
   - component: {fileID: 4374286055551708492}
   - component: {fileID: -3696368151770690815}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: BulletTriangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 16
   m_Sprite: {fileID: 21300000, guid: f34a387ebd1ad7a4091ef6c57ed69f7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

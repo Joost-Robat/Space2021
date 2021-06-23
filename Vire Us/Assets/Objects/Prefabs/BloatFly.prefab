@@ -4826,6 +4826,7 @@ GameObject:
   - component: {fileID: 2729166962624818035}
   - component: {fileID: 7515304892617058145}
   - component: {fileID: 4441518666455430405}
+  - component: {fileID: 6715238760097352539}
   m_Layer: 0
   m_Name: BloatFly
   m_TagString: bloatFly
@@ -4842,7 +4843,7 @@ Transform:
   m_GameObject: {fileID: 8986159079118531555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -44.3, y: 26.9, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 1336551421627536038}
   m_Father: {fileID: 0}
@@ -4887,7 +4888,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 41
   m_Sprite: {fileID: 21300000, guid: 05acc514a0a278c449a925e75fde716d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4957,3 +4958,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   deathEffect: {fileID: 6694123336789963687}
+--- !u!251 &6715238760097352539
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8986159079118531555}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 180
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
