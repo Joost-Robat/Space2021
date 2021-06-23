@@ -29,7 +29,7 @@ public class EnemyBehaviour : MonoBehaviour
         GameObject player = GameObject.Find("Player");
         playerY = player.transform.position.y;
         playerX = player.transform.position.x;
-        PlayerYTest = player.transform.position.y - 10;
+        PlayerYTest = player.transform.position.y - 1;
         EnemyY = transform.position.y;
         xMinus = playerX - 40;
         xPlus = playerX + 40;
