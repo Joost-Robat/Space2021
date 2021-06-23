@@ -10,11 +10,13 @@ public class BloatBehaviour : MonoBehaviour
     public float speedX;
     public float speedY;
     public float speedUp = 1;
+    public Renderer renderer;
+    public float timer;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        GameObject emitter = GameObject.FindGameObjectWithTag("emitter");
-        emitter.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -23,6 +25,17 @@ public class BloatBehaviour : MonoBehaviour
         GameObject player = GameObject.Find("Player");
         playerY = player.transform.position.y;
         playerX = player.transform.position.x;
+        Enemy enemy = GetComponent<Enemy>();
+        if(enemy.health <= 0)
+        {
+            renderer = GetComponent<Renderer>();
+            renderer.enabled = false;
+            timer += Time.deltaTime;
+            if(timer >= 0.7f)
+            {
+                gameObject.SetActive(false);
+            }
+        }
         if(transform.position.x < playerX)                  //X Position
         {
             flip(false);
