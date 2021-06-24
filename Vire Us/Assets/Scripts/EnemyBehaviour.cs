@@ -14,6 +14,7 @@ public class EnemyBehaviour : MonoBehaviour
     private float xPlus;
     public float jumpTrue;
     private Rigidbody2D rigidBody;
+    public Animator animator;
     public float speed = 0;
     public float speedUp = 1;
     public float countdown = 0;
@@ -51,8 +52,10 @@ public class EnemyBehaviour : MonoBehaviour
                 jumpTrue += 10 * Time.deltaTime;
                 if (jumpTrue >= 50)
                 {
+                    animator.SetTrigger("jump");
                     rigidBody.AddForce(new Vector2(0, 80), ForceMode2D.Impulse);
                     jumpTrue -= 25;
+                    animator.SetTrigger("jump");
                 }
             }
             else
@@ -62,7 +65,6 @@ public class EnemyBehaviour : MonoBehaviour
         }
         if(transform.position.x < playerX)
         {
-            flip(false);
             if (speed < 0)
             {
                 speedUp = 4;
@@ -84,7 +86,6 @@ public class EnemyBehaviour : MonoBehaviour
         }
         else
         {
-            flip(true);
             if(speed > 0)
             {
                 speedUp = 4;
@@ -108,10 +109,5 @@ public class EnemyBehaviour : MonoBehaviour
         //Debug.Log(jumpTrue);
         //Debug.Log("Right: " + speedRight);
         //Debug.Log("Left: " + speedLeft);
-    }
-    void flip(bool Statement)
-    {
-        SpriteRenderer sp = GetComponent<SpriteRenderer>();
-        sp.flipX = Statement;
     }
 }

@@ -1,0 +1,593 @@
+fileFormatVersion: 2
+guid: 2de3362503e83f249abe60d76c1bbffb
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Ovaal 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 984
+      y: 310
+      width: 12
+      height: 12
+    spriteID: 5a5d20810eca2cd4dbffb465f5337560
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 87, y: -624}
+  - name: Ovaal 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 984
+      y: 256
+      width: 23
+      height: 23
+    spriteID: e3eea065de476f54e8af6f52dfa2a27e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 49, y: -666}
+  - name: Ovaal 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 984
+      y: 287
+      width: 16
+      height: 15
+    spriteID: 0b72a1731d3daad46a6987cd80d69d80
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 46, y: -639}
+  - name: Laag 8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 492
+      y: 802
+      width: 114
+      height: 187
+    spriteID: 0245a3b5749b2084fbdb9a4ba94f2c34
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -372, y: -51}
+  - name: Laag 13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 644
+      y: 384
+      width: 112
+      height: 183
+    spriteID: 242751bf697768344b59b5d9761df9fd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -223, y: -470}
+  - name: boven arm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 492
+      y: 384
+      width: 144
+      height: 198
+    spriteID: f8f8bb9e2c213d341922f96e8dfc07e9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -361, y: -257}
+  - name: onder arm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 408
+      y: 210
+      width: 226
+      height: 67
+    spriteID: f1d5b0e2afc59e3488875b9c5873ea46
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -476, y: -408}
+  - name: onder been
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 842
+      y: 4
+      width: 131
+      height: 244
+    spriteID: b778b3354a76b5d498ca9e014322a645
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -74, y: -165}
+  - name: boven been
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 384
+      width: 251
+      height: 458
+    spriteID: 2b2cd97d09e942347b2332dd716c1e9a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -759, y: 211}
+  - name: voet
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 842
+      y: 256
+      width: 134
+      height: 83
+    spriteID: 271e522de5982f2408fa0d56275e0765
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -77, y: 92}
+  - name: lichaam
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 384
+      width: 221
+      height: 497
+    spriteID: ed57710b0fda7b241a2de7910789af69
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -478, y: -155}
+  - name: onder been achter
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 408
+      y: 4
+      width: 237
+      height: 198
+    spriteID: a8cb2ee8e8a6bc4408115befb6db3705
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -89, y: -212}
+  - name: boven been achter
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 396
+      height: 372
+    spriteID: 91e240c301148a44480d0f6af6140c5f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -484, y: -245}
+  - name: voet achter
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 653
+      y: 200
+      width: 92
+      height: 136
+    spriteID: cb7fdc43ed0150e4fa20e05cbce26f8d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 171, y: -5}
+  - name: onder arm achter
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 492
+      y: 590
+      width: 108
+      height: 204
+    spriteID: 47a5f71237c18974d9f176cf91b6486a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -213, y: 34}
+  - name: boven arm achter
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 653
+      y: 4
+      width: 181
+      height: 188
+    spriteID: 852174083b039d143a3ca364e3080214
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -55, y: -661}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 1024
+  importedTextureHeight: 1024
+  documentSize: {x: 1920, y: 1080}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 1024
+  textureActualHeight: 1024
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: hoofd
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 50
+    mosaicPosition: {x: 0, y: 0}
+  - name: Ovaal 5
+    spriteName: Ovaal 5
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 5a5d20810eca2cd4dbffb465f5337560
+    layerID: 46
+    mosaicPosition: {x: 984, y: 310}
+  - name: Ovaal 3
+    spriteName: Ovaal 3
+    isGroup: 0
+    parentIndex: 0
+    spriteID: e3eea065de476f54e8af6f52dfa2a27e
+    layerID: 43
+    mosaicPosition: {x: 984, y: 256}
+  - name: Ovaal 4
+    spriteName: Ovaal 4
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 0b72a1731d3daad46a6987cd80d69d80
+    layerID: 45
+    mosaicPosition: {x: 984, y: 287}
+  - name: Laag 8
+    spriteName: Laag 8
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 0245a3b5749b2084fbdb9a4ba94f2c34
+    layerID: 42
+    mosaicPosition: {x: 492, y: 802}
+  - name: Laag 13
+    spriteName: Laag 13
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 242751bf697768344b59b5d9761df9fd
+    layerID: 56
+    mosaicPosition: {x: 644, y: 384}
+  - name: boven arm
+    spriteName: boven arm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f8f8bb9e2c213d341922f96e8dfc07e9
+    layerID: 70
+    mosaicPosition: {x: 492, y: 384}
+  - name: onder arm
+    spriteName: onder arm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f1d5b0e2afc59e3488875b9c5873ea46
+    layerID: 69
+    mosaicPosition: {x: 408, y: 210}
+  - name: onder been
+    spriteName: onder been
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b778b3354a76b5d498ca9e014322a645
+    layerID: 75
+    mosaicPosition: {x: 842, y: 4}
+  - name: boven been
+    spriteName: boven been
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2b2cd97d09e942347b2332dd716c1e9a
+    layerID: 77
+    mosaicPosition: {x: 4, y: 384}
+  - name: voet
+    spriteName: voet
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 271e522de5982f2408fa0d56275e0765
+    layerID: 81
+    mosaicPosition: {x: 842, y: 256}
+  - name: lichaam
+    spriteName: lichaam
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ed57710b0fda7b241a2de7910789af69
+    layerID: 57
+    mosaicPosition: {x: 263, y: 384}
+  - name: onder been achter
+    spriteName: onder been achter
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a8cb2ee8e8a6bc4408115befb6db3705
+    layerID: 84
+    mosaicPosition: {x: 408, y: 4}
+  - name: boven been achter
+    spriteName: boven been achter
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 91e240c301148a44480d0f6af6140c5f
+    layerID: 83
+    mosaicPosition: {x: 4, y: 4}
+  - name: voet achter
+    spriteName: voet achter
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cb7fdc43ed0150e4fa20e05cbce26f8d
+    layerID: 82
+    mosaicPosition: {x: 653, y: 200}
+  - name: onder arm achter
+    spriteName: onder arm achter
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 47a5f71237c18974d9f176cf91b6486a
+    layerID: 71
+    mosaicPosition: {x: 492, y: 590}
+  - name: boven arm achter
+    spriteName: boven arm achter
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 852174083b039d143a3ca364e3080214
+    layerID: 74
+    mosaicPosition: {x: 653, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: main character space Texture
+  prefabAssetName: main character space Prefab
+  spriteLibAssetName: main character space Sprite Lib
+  secondarySpriteTextures: []

@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 5f9788490ff47bb4684b2fe6f2f8c8f5
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: boven arm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1749
+      y: 1171
+      width: 151
+      height: 266
+    spriteID: 20545d66e779c954ab98894db448489f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 723, y: 743}
+  - name: hand
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 518
+      width: 536
+      height: 645
+    spriteID: abca7dca66347434281bd0a63d14b5e6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1373, y: 518}
+  - name: onder arm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1388
+      y: 1468
+      width: 272
+      height: 202
+    spriteID: 3875e8d3c80a13543babacd663b50af0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 251, y: 1042}
+  - name: hoofd
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1177
+      height: 506
+    spriteID: 62bcbf80489343e46a7bf1db3d9c3ea8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -433, y: -324}
+  - name: boven been
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1388
+      y: 1171
+      width: 353
+      height: 289
+    spriteID: d8fd63b84a512aa438dd101ecce1931e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 866, y: 753}
+  - name: voet
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 345
+      y: 1171
+      width: 364
+      height: 674
+    spriteID: bbf375225720145439a464ba80deca09
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 298, y: 1162}
+  - name: onder been
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 345
+      y: 1853
+      width: 294
+      height: 161
+    spriteID: 44b25a83a329c564e901e8841da1c39b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -6, y: 1369}
+  - name: body
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 717
+      y: 1171
+      width: 442
+      height: 374
+    spriteID: 20bc7e5b047ad7841a7aa3260fc0b7e7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -58, y: 766}
+  - name: hentai
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1189
+      y: 4
+      width: 608
+      height: 451
+    spriteID: c6f1442fabb6ab34fbc5436fa391ec79
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 874, y: -599}
+  - name: "boven been kopi\xEBren"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 717
+      y: 1553
+      width: 355
+      height: 294
+    spriteID: 89cd4ab75312ebc40a5baa9deb551112
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 146, y: 1102}
+  - name: "voet kopi\xEBren"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1167
+      y: 1171
+      width: 213
+      height: 732
+    spriteID: d2543b986f52c9d40a3d79d408b1ac43
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 854, y: 1124}
+  - name: "onder been kopi\xEBren"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1805
+      y: 4
+      width: 225
+      height: 253
+    spriteID: 16ab4278ea66bba49b8ff55d3d833998
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1311, y: -509}
+  - name: "boven arm kopi\xEBren"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1561
+      y: 1678
+      width: 172
+      height: 255
+    spriteID: 70b065b4675f3594aa92a7e36fefd937
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 522, y: 1171}
+  - name: "hand kopi\xEBren"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1171
+      width: 333
+      height: 786
+    spriteID: 886d82060846aa9438c22817e9495da0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1254, y: 1122}
+  - name: "onder arm kopi\xEBren"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1388
+      y: 1678
+      width: 165
+      height: 305
+    spriteID: cc116e84c0c84ec4ba7a3fb6ccd43d44
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 266, y: 1161}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 1920, y: 1080}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 2048
+  textureActualHeight: 2048
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Groep 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 56
+    mosaicPosition: {x: 0, y: 0}
+  - name: boven arm
+    spriteName: boven arm
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 20545d66e779c954ab98894db448489f
+    layerID: 41
+    mosaicPosition: {x: 1749, y: 1171}
+  - name: hand
+    spriteName: hand
+    isGroup: 0
+    parentIndex: 0
+    spriteID: abca7dca66347434281bd0a63d14b5e6
+    layerID: 43
+    mosaicPosition: {x: 4, y: 518}
+  - name: onder arm
+    spriteName: onder arm
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 3875e8d3c80a13543babacd663b50af0
+    layerID: 42
+    mosaicPosition: {x: 1388, y: 1468}
+  - name: hoofd
+    spriteName: hoofd
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 62bcbf80489343e46a7bf1db3d9c3ea8
+    layerID: 33
+    mosaicPosition: {x: 4, y: 4}
+  - name: boven been
+    spriteName: boven been
+    isGroup: 0
+    parentIndex: 0
+    spriteID: d8fd63b84a512aa438dd101ecce1931e
+    layerID: 38
+    mosaicPosition: {x: 1388, y: 1171}
+  - name: voet
+    spriteName: voet
+    isGroup: 0
+    parentIndex: 0
+    spriteID: bbf375225720145439a464ba80deca09
+    layerID: 40
+    mosaicPosition: {x: 345, y: 1171}
+  - name: onder been
+    spriteName: onder been
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 44b25a83a329c564e901e8841da1c39b
+    layerID: 39
+    mosaicPosition: {x: 345, y: 1853}
+  - name: body
+    spriteName: body
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 20bc7e5b047ad7841a7aa3260fc0b7e7
+    layerID: 36
+    mosaicPosition: {x: 717, y: 1171}
+  - name: hentai
+    spriteName: hentai
+    isGroup: 0
+    parentIndex: 0
+    spriteID: c6f1442fabb6ab34fbc5436fa391ec79
+    layerID: 37
+    mosaicPosition: {x: 1189, y: 4}
+  - name: "boven been kopi\xEBren"
+    spriteName: "boven been kopi\xEBren"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 89cd4ab75312ebc40a5baa9deb551112
+    layerID: 49
+    mosaicPosition: {x: 717, y: 1553}
+  - name: "voet kopi\xEBren"
+    spriteName: "voet kopi\xEBren"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: d2543b986f52c9d40a3d79d408b1ac43
+    layerID: 48
+    mosaicPosition: {x: 1167, y: 1171}
+  - name: "onder been kopi\xEBren"
+    spriteName: "onder been kopi\xEBren"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 16ab4278ea66bba49b8ff55d3d833998
+    layerID: 47
+    mosaicPosition: {x: 1805, y: 4}
+  - name: "boven arm kopi\xEBren"
+    spriteName: "boven arm kopi\xEBren"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 70b065b4675f3594aa92a7e36fefd937
+    layerID: 46
+    mosaicPosition: {x: 1561, y: 1678}
+  - name: "hand kopi\xEBren"
+    spriteName: "hand kopi\xEBren"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 886d82060846aa9438c22817e9495da0
+    layerID: 45
+    mosaicPosition: {x: 4, y: 1171}
+  - name: "onder arm kopi\xEBren"
+    spriteName: "onder arm kopi\xEBren"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: cc116e84c0c84ec4ba7a3fb6ccd43d44
+    layerID: 44
+    mosaicPosition: {x: 1388, y: 1678}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: _PITTER 1 Texture
+  prefabAssetName: _PITTER 1 Prefab
+  spriteLibAssetName: _PITTER 1 Sprite Lib
+  secondarySpriteTextures: []

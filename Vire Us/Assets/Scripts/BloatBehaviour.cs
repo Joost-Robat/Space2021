@@ -38,7 +38,6 @@ public class BloatBehaviour : MonoBehaviour
         }
         if(transform.position.x < playerX)                  //X Position
         {
-            flip(false);
             if(speedX > 0)
             {
                 speedUp = 10;
@@ -60,7 +59,6 @@ public class BloatBehaviour : MonoBehaviour
         }
         else
         {
-            flip(true);
             if (speedX < 0)
             {
                 speedUp = 10;
@@ -126,10 +124,5 @@ public class BloatBehaviour : MonoBehaviour
         }
                                                         //Y Position
         transform.position += new Vector3(0, speedY, 0) * Time.deltaTime;
-    }
-    void flip(bool Statement)
-    {
-        SpriteRenderer sp = GetComponent<SpriteRenderer>();
-        sp.flipX = Statement;
     }
 }
