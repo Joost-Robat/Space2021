@@ -14,10 +14,12 @@ public class EnemyBehaviour : MonoBehaviour
     private float xPlus;
     public float jumpTrue;
     private Rigidbody2D rigidBody;
-    public Animator animator;
     public float speed = 0;
     public float speedUp = 1;
     public float countdown = 0;
+    public float jumpAnimationTimer;
+    public bool animationJump = false;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,11 +34,11 @@ public class EnemyBehaviour : MonoBehaviour
         playerX = player.transform.position.x;
         PlayerYTest = player.transform.position.y - 10;
         EnemyY = transform.position.y;
-        xMinus = playerX - 40;
-        xPlus = playerX + 40;
-        if (xPlus <= transform.position.x)
+        xMinus = playerX - 35;
+        xPlus = playerX + 35;
+        if (xPlus > transform.position.x)
         {
-            if (xMinus <= transform.position.x)
+            if (xMinus < transform.position.x)
             {
                 inRange = true;
             }
@@ -49,13 +51,13 @@ public class EnemyBehaviour : MonoBehaviour
         {
             if (EnemyY < PlayerYTest)
             {
-                jumpTrue += 10 * Time.deltaTime;
-                if (jumpTrue >= 50)
+                if(jumpTrue < 45)
                 {
-                    animator.SetTrigger("jump");
-                    rigidBody.AddForce(new Vector2(0, 80), ForceMode2D.Impulse);
-                    jumpTrue -= 25;
-                    animator.SetTrigger("jump");
+                    jumpTrue += 10 * Time.deltaTime;
+                }
+                else
+                {
+                    animationJump = true;
                 }
             }
             else
@@ -63,7 +65,31 @@ public class EnemyBehaviour : MonoBehaviour
                 jumpTrue = 0;
             }
         }
-        if(transform.position.x < playerX)
+        if(inRange == true)
+        {
+            if (animationJump == true)
+            {
+                if (jumpAnimationTimer == 0)
+                {
+                    animator.SetTrigger("jump1");
+                }
+                jumpAnimationTimer += Time.deltaTime;
+                if (jumpAnimationTimer >= 0.9f)
+                {
+                    rigidBody.AddForce(new Vector2(0, 80), ForceMode2D.Impulse);
+                    jumpTrue -= 25;
+                    animationJump = false;
+                    jumpAnimationTimer = 0;
+                }
+            }
+        }
+        else
+        {
+            animationJump = false;
+            jumpAnimationTimer = 0;
+            jumpTrue -= 25;
+        }
+        if (transform.position.x < playerX)
         {
             if (speed < 0)
             {
@@ -86,7 +112,7 @@ public class EnemyBehaviour : MonoBehaviour
         }
         else
         {
-            if(speed > 0)
+            if (speed > 0)
             {
                 speedUp = 4;
                 speed -= 15 * speedUp * Time.deltaTime;
