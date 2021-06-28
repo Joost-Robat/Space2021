@@ -33,6 +33,7 @@ GameObject:
   - component: {fileID: 3869190928026898518}
   - component: {fileID: 6943117879064871474}
   - component: {fileID: 6771612140946291494}
+  - component: {fileID: 3430284193990791454}
   m_Layer: 4
   m_Name: BloatFly
   m_TagString: bloatFly
@@ -94,7 +95,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
+  m_SortingOrder: 300
   m_Sprite: {fileID: 21300000, guid: 6012e9fa8cebe2e41b367621aefec41b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -166,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
-  deathEffect: {fileID: 7197249268852499032, guid: 6f65e484451150e42893faa69b17d819,
+  deathEffect: {fileID: 2241815711207977647, guid: 6f65e484451150e42893faa69b17d819,
     type: 3}
 --- !u!95 &6771612140946291494
 Animator:
@@ -187,6 +188,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3430284193990791454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2399531634941893844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bdd430748b82ca4f8599bc957d1c2ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
 --- !u!212 &6771612140315798858
 SpriteRenderer:
   m_ObjectHideFlags: 0

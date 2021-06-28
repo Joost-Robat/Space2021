@@ -14,7 +14,6 @@ public class EnemyDamage : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         anim.SetTrigger("Attack");
-        Debug.Log("Attack");
     }
 
     void OnTriggerExit2D(Collider2D other)
