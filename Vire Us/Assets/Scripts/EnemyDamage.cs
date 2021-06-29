@@ -11,14 +11,21 @@ public class EnemyDamage : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D attack)
     {
-        anim.SetTrigger("Attack");
-        Debug.Log("Attack");
+        PlayerControls player = attack.GetComponent<PlayerControls>();
+        if (player != null)
+        {
+            anim.SetTrigger("Attack");
+        }
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D stopattack)
     {
-        anim.SetTrigger("Walk");
+        PlayerControls player = stopattack.GetComponent<PlayerControls>();
+        if (player != null)
+        {
+            anim.SetTrigger("StopAttack");
+        }
     }
 }

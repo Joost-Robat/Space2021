@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControls : MonoBehaviour
 {
@@ -18,22 +19,25 @@ public class PlayerControls : MonoBehaviour
 
     private void Update()
     {
-        var movement = Input.GetAxis("Horizontal");
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+        if (!PauseMenu.isPaused)
+        {
+            var movement = Input.GetAxis("Horizontal");
+            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
-        {
-            _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);    
-        }
+            if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
+            {
+                _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+            }
 
-        Vector3 gunpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (gunpos.x < transform.position.x)
-        {
-            transform.eulerAngles = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
-        }
-        else
-        {
-            transform.eulerAngles = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
+            Vector3 gunpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (gunpos.x < transform.position.x)
+            {
+                transform.eulerAngles = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
+            }
         }
     }
     public void TakeDamage(int damage)
@@ -48,5 +52,7 @@ public class PlayerControls : MonoBehaviour
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        Cursor.visible = true;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

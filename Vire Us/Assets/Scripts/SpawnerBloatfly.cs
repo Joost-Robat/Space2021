@@ -24,7 +24,7 @@ public class SpawnerBloatfly : MonoBehaviour
             timer += Time.deltaTime;
             if(timer >= 10)
             {
-                Instantiate(BloatFly, transform.position, transform.rotation);
+                Instantiate(BloatFly, gameObject.transform.position, gameObject.transform.rotation);
                 timer -= randomInt;
                 randomInt = Random.Range(0, 4);
 

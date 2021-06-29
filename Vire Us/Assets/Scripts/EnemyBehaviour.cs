@@ -87,7 +87,7 @@ public class EnemyBehaviour : MonoBehaviour
         {
             animationJump = false;
             jumpAnimationTimer = 0;
-            jumpTrue -= 25;
+            jumpTrue -= 30;
         }
         if (transform.position.x < playerX)
         {
@@ -95,18 +95,18 @@ public class EnemyBehaviour : MonoBehaviour
             {
                 speedUp = 4;
                 speed += 15 * speedUp * Time.deltaTime;
-                if (speed > 35)
+                if (speed > 30)
                 {
-                    speed = 35;
+                    speed = 30;
                 }
             }
             else
             {
                 speedUp = 1;
                 speed += 15 * Time.deltaTime;
-                if (speed > 35)
+                if (speed > 30)
                 {
-                    speed = 35;
+                    speed = 30;
                 }
             }
         }
@@ -116,18 +116,18 @@ public class EnemyBehaviour : MonoBehaviour
             {
                 speedUp = 4;
                 speed -= 15 * speedUp * Time.deltaTime;
-                if (speed < -35)
+                if (speed < -30)
                 {
-                    speed = -35;
+                    speed = -30;
                 }
             }                                   // Begin Tegenstribbel Rechts
             else
             {
                 speedUp = 1;
                 speed -= 15 * Time.deltaTime;
-                if (speed < -35)
+                if (speed < -30)
                 {
-                    speed = -35;
+                    speed = -30;
                 }
             }
         }

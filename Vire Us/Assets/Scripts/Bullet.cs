@@ -8,9 +8,12 @@ public class Bullet : MonoBehaviour
     public int damage = 40;
     public Rigidbody2D rb;
 
+    Renderer m_Renderer;
+
     void Start()
     {
         rb.velocity = transform.right * speed;
+        m_Renderer = GetComponent<Renderer>();
     }
     void OnTriggerEnter2D (Collider2D hitInfo)
     {
@@ -29,4 +32,11 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void Update()
+    {
+        if (!m_Renderer.isVisible)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
